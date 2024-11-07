@@ -49,6 +49,7 @@ footer{
   display: flex;
   justify-content: space-around ;
   align-items: center;
+  gap: 10px;
 }
 .Productos{
   grid-area: productos;
@@ -148,6 +149,7 @@ footer{
   }
   .cabecera{
     display: contents;
+    cursor: pointer;
   }
   #desplegable{
     display: none;
@@ -159,5 +161,41 @@ footer{
   }
   .cafe , .te{
     margin: 0 10px;
+  }
+  .logo {
+    display: flex;
+    height: 150px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo .logo-imagen {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: cambiar-imagen 2s infinite;
+  }
+  
+  @keyframes cambiar-imagen {
+    0% {
+      background-image: url(/assets/imgs/logo_mov1.png);
+    }
+    25% {
+      background-image: url(/assets/imgs/logo_mov2.png);
+    }
+    50% {
+      background-image: url(/assets/imgs/logo_mov3.png);
+    }
+    75% {
+      background-image: url(/assets/imgs/logo_mov4.png);
+    }
+    100% {
+      background-image: url(/assets/imgs/logo_mov1.png);
+    }
   }
 }
