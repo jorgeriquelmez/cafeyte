@@ -181,10 +181,9 @@ footer{
   .cabecera{
     display: contents;
     cursor: pointer;
-  }
-  #ubicaciones{
     transition: header 0.5s ease-in-out;
   }
+
   header:hover{
     height: 100px;
     .cabecera li{
