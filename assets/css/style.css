@@ -174,10 +174,25 @@ footer{
     margin-top: 0;
     padding-left: 10px;
   }
+  .cabecera li{
+    display: none;
+    margin-top: 10px;
+  }
   .cabecera{
     display: contents;
     cursor: pointer;
   }
+  #ubicaciones{
+    transition: header 0.5s ease-in-out;
+  }
+  header:hover{
+    height: 100px;
+    .cabecera li{
+      display: block;
+    }
+
+  }
+
   #desplegable{
     display: none;
   }
