@@ -54,6 +54,30 @@ footer{
 .Productos{
   grid-area: productos;
   align-items: center;
+
+}
+.Productos {
+  height: 75px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  position: absolute;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+  animation: mover 20s infinite linear;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .input-buscador{
  
@@ -128,6 +152,9 @@ footer{
     flex-wrap: unset;
     justify-content: unset;
 
+  }
+  .Productos{
+    background-color: rgb(234, 230, 230);
   }
   .icono{
     display: flex;
